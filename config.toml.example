@@ -1,0 +1,13 @@
+# Location where the command should be run from
+base_dir = "/path/to/command/location"
+# Command to run in a thread
+command = "run command"
+
+# List of environment variables to pass to the command execution.
+# Define multiple times to start multiple command threads with different environment variables
+# Define without any key pair to run without environment variables
+[[environment]]
+ENV_EXAMPLE = "example1"
+
+[[environment]]
+ENV_EXAMPLE = "example2"
