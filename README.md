@@ -1,6 +1,6 @@
 # thread-runner
 
-A simple tool that enables multi-thread execution of another application that is single-threaded.
+A simple tool that enables parallel execution of another application that is single-threaded.
 
 The way it works is providing a `config.toml` file with some configuration for each thread execution, and using `rust`
 multi-thread capabilities, a new process is spawn in its own thread.
@@ -10,7 +10,7 @@ multi-thread capabilities, a new process is spawn in its own thread.
 Configuration is simply done by creating an `config.toml` file, which can be done using the provided
 `config.toml.example` file. In this file, the variables that need to be set are:
 
-- `base_dir`, which indicates the root dir of the application that will be run multi-threaded.
+- `base_dir`, which indicates the root dir of the application that will be run.
 - `command`, the command to execute that starts the application.
 
 Optionally, environment variables can be defined, and are specific for each of the thread that will be started. This is
